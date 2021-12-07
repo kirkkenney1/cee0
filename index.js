@@ -30,7 +30,7 @@ const sendData = (data) => {
     http.send(JSON.stringify(data));
     http.onload = () => {
       console.log(http);
-      const responseData = http.responseText;
+      const responseData = JSON.parse(http.responseText);
       const status = http.status;
       resolve({
         status,
