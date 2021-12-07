@@ -30,12 +30,20 @@ const sendData = (data) => {
     http.send(JSON.stringify(data));
     http.onload = () => {
       console.log(http);
-      const responseData = JSON.parse(http.responseText);
+      let responseData;
       const status = http.status;
+      if (status == 500) {
+        responseData = { message: JSON.parse(http.responseText) };
+      } else {
+        responseData = JSON.parse(http.responseText);
+      }
       resolve({
         status,
         responseData,
       });
+    };
+    http.onerror = () => {
+      resolve(false);
     };
   });
 };
