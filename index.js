@@ -29,6 +29,7 @@ const sendData = (data) => {
     http.setRequestHeader("Authorization", `Bearer ${apiKey}`);
     http.send(JSON.stringify(data));
     http.onload = () => {
+      console.log(http);
       const responseData = JSON.parse(http.responseText);
       const status = http.status;
       resolve({
