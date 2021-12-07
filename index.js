@@ -33,7 +33,7 @@ const sendData = (data) => {
       let responseData;
       const status = http.status;
       if (status == 500) {
-        responseData = { message: JSON.parse(http.responseText) };
+        responseData = { message: http.responseText };
       } else {
         responseData = JSON.parse(http.responseText);
       }
