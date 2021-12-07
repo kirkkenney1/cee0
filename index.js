@@ -37,12 +37,6 @@ const sendData = (data) => {
         responseData,
       });
     };
-    // http.onerror = () => {
-    //   resolve({
-    //     status,
-    //     responseData,
-    //   });
-    // };
   });
 };
 
