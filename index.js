@@ -55,13 +55,14 @@ const constructData = () => {
     companyName,
   };
   sendData(data).then((response) => {
-    if (response.status != 201) {
+    if (response.status != 201 && response.status != 500) {
       errorMessageContainer.className = "error";
       errorMessageContainer.style.display = "block";
       errorMessageContainer.textContent = response.responseData.message;
     } else {
       errorMessageContainer.className = "success";
-      errorMessageContainer.textContent = response.responseData.message;
+      errorMessageContainer.textContent =
+        "Account successfully created. Please check your emails for further information and sign in instructions.";
       errorMessageContainer.style.display = "block";
       for (let i = 0; i < inputs.length; i++) {
         inputs[i].value = "";
