@@ -38,7 +38,10 @@ const sendData = (data) => {
       });
     };
     http.onerror = () => {
-      resolve(false);
+      resolve({
+        status,
+        responseData,
+      });
     };
   });
 };
