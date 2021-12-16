@@ -1,14 +1,14 @@
 // DEV ENVIRONMENT //
-const apiUrl =
-  "https://convedodev.appiancloud.com/suite/webapi/create-customer";
-const apiKey =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMzJkZjQwMS0wNWI3LTQ4NTYtODRiZi02NWJiYTUyYjY4MTgifQ.ABRVQhw9yk2NzoWENrwbMSfCzxme_agDNzofeJ-Nw0A";
+//const apiUrl =
+//  "https://convedodev.appiancloud.com/suite/webapi/create-customer";
+//const apiKey =
+ // "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMzJkZjQwMS0wNWI3LTQ4NTYtODRiZi02NWJiYTUyYjY4MTgifQ.ABRVQhw9yk2NzoWENrwbMSfCzxme_agDNzofeJ-Nw0A";
 
 // TEST ENVIRONMENT
-// const apiUrl =
-//   "https://convedotest.appiancloud.com/suite/webapi/create-customer";
-// const apiKey =
-//   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmM0MzI2MC1hOWE5LTRkYWQtYmU4Zi0zYTY3MGUwMGU4ODAifQ.2RKWdPF8jt9w9YmY8NdJtKDc8M1W18g-CpeztwuqG3U";
+const apiUrl =
+   "https://convedotest.appiancloud.com/suite/webapi/create-customer";
+ const apiKey =
+   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmM0MzI2MC1hOWE5LTRkYWQtYmU4Zi0zYTY3MGUwMGU4ODAifQ.2RKWdPF8jt9w9YmY8NdJtKDc8M1W18g-CpeztwuqG3U";
 
 const form = document.getElementById("form");
 const inputs = document.querySelectorAll("input");
